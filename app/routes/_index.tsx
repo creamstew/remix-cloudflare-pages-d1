@@ -28,7 +28,9 @@ export default function Index() {
       <h1>Welcome to Remix</h1>
       <ul>
         {customers.map((customer) => (
-          <li key={customer.CustomerID}>{customer.CompanyName}</li>
+          <li key={customer.CustomerID}>
+            {customer.CompanyName}, {customer.ContactName}
+          </li>
         ))}
       </ul>
     </div>
